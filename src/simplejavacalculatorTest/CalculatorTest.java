@@ -13,6 +13,7 @@ class CalculatorTest {
 	@Test
 	void calculateBiNormalTest() {
 		Calculator calculator = new Calculator();
+		System.out.println("Hello");
 		calculator.calculateBi(Calculator.BiOperatorModes.normal, 2.0);
 		Assertions.assertEquals(NaN, calculator.calculateBi(Calculator.BiOperatorModes.normal, 3.0));
     }
